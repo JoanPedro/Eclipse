@@ -1,0 +1,5 @@
+package oo.herenca.copy;
+
+public class Monstro extends Jogador {
+
+}

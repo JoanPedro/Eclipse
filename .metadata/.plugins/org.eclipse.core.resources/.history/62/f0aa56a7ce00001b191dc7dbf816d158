@@ -1,0 +1,46 @@
+package oo.herenca;
+
+public class Jogador {
+
+	int vida = 100;
+	int x;
+	int y;
+
+	boolean atacar(Jogador oponente) {
+
+		int delta_X = Math.abs(this.x - oponente.x);
+		int delta_Y = Math.abs(this.y - oponente.y);
+		System.out.println(delta_X);
+		System.out.println(delta_Y);
+		if (delta_X == 0 && delta_Y == 1) {
+			oponente.vida -= 10;
+		} else if (delta_X == 1 && delta_Y == 0) {
+			oponente.vida -= 10;
+		} else {
+			return false;
+		}
+
+		return true;
+	}
+
+	boolean andar(Direcao direcao) {
+		switch (direcao) {
+		case NORTE:
+			y--;
+			break;
+		case LESTE:
+			x++;
+			break;
+		case SUL:
+			y++;
+			break;
+		case OESTE:
+			x--;
+			break;
+		default:
+			break;
+		}
+
+		return true;
+	}
+}

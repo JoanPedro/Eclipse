@@ -1,0 +1,12 @@
+package excessao.personalizadaA;
+
+import excessao.Aluno;
+
+public class TesteValidacoes {
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno("", -8);
+		Validar.aluno(aluno);
+		System.out.println("Aluno validado");
+	}
+}

@@ -1,0 +1,11 @@
+package colecoes;
+
+import java.util.HashMap;
+
+public class Map {
+	public static void main(String[] args) {
+		
+		Mapa<Long, String> usuarios = new HashMap<Long, String>();
+		
+	}
+}

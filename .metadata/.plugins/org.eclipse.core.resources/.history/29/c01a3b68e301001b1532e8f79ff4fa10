@@ -1,0 +1,20 @@
+package excessao;
+
+public class Basico {
+	public static void main(String[] args) {
+		try {
+			Aluno a1 = null;
+			imprimirNomeAluno(a1);
+
+			System.out.println(7 / 0);
+		} catch (Exception e) {
+			System.out.println("Deu erro :)");
+		}
+
+		System.out.println("Fim :)");
+	}
+
+	static public void imprimirNomeAluno(Aluno aluno) {
+		System.out.println(aluno.nome);
+	}
+}

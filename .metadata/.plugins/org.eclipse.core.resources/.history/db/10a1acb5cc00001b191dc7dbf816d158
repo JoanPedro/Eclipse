@@ -1,0 +1,5 @@
+package oo.herenca;
+
+public enum Direcao {
+
+}

@@ -1,0 +1,11 @@
+package fundamentos;
+
+public class Temperatura {
+	public static void main(String[] args) {
+		final double FACTOR = 32;
+		final double FACTORF = (5/9);
+		double fh = 10;
+		double C = fh + FACTOR + FACTORF;
+		System.out.println(C);
+	}
+}

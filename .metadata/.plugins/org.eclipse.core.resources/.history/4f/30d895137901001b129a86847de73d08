@@ -1,0 +1,34 @@
+package streams;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class ImprimindoObjeto {
+
+	public static void main(String[] args) {
+
+		System.out.println("\n Usando Foreach");
+		List<String> aprovados = Arrays.asList("Lu", "Gui", "Luca", "Bia", "Ana");
+
+		for (int i = 0; i < aprovados.size(); i++) {
+			System.out.println(aprovados.get(i));
+		}
+
+		System.out.println("\n Usando Iterator");
+		for (String aprovado : aprovados) {
+			System.out.println(aprovado);
+		}
+
+		System.out.println("\n Usando Stream");
+		Iterator<String> iterator = aprovados.iterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+
+		Stream<String> stream = aprovados.stream();
+//		stream.forEach(System.out::println);
+		stream.forEach(aprovado -> System.out.println(aprovado));
+	}
+}

@@ -1,0 +1,7 @@
+package fundamentos;
+
+public class ObjetoVsPrimitivo {
+	public static void main(String[] args) {
+		System.out.print();
+	}
+}

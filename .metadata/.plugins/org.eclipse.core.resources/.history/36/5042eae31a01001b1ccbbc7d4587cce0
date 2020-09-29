@@ -1,0 +1,30 @@
+package lambdas;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Consumer;
+
+public class Consumidor {
+	public static void main(String[] args) {
+
+		Consumer<Produto> imprimir = produto -> System.out.println(produto.nome + "!!!");
+
+		Produto p1 = new Produto("Caneta Preta", 13.354, 0.9);
+		Produto p2 = new Produto("Caneta Azul", 14.354, 0.8);
+		Produto p3 = new Produto("Caneta Marrom", 15.354, 0.7);
+		Produto p4 = new Produto("Caneta Laranja", 16.354, 0.6);
+		Produto p5 = new Produto("Caneta Verde", 17.354, 0.5);
+		imprimir.accept(p1);
+
+		List<Produto> produtos = Arrays.asList(p1, p2, p3, p4, p5);
+		Set<Double> inteiro = new HashSet<Double>();
+		
+		Map<K, V>
+		produtos.forEach(imprimir);
+		produtos.forEach(produto -> System.out.println(produto.preco));
+		produtos.forEach(System.out::println);
+	}
+}

@@ -1,0 +1,16 @@
+package colecoes;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class Pilha {
+	public static void main(String[] args) {
+		Deque<String> pilha = new ArrayDeque<String>();
+		
+		pilha.add("O Pequeno príncipe");
+		pilha.push("Dom Quixote");
+		pilha.push("O Hobbit");
+		
+		System.out.println(pilha.peek());
+	}
+}

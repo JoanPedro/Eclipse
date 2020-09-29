@@ -1,0 +1,12 @@
+package lambdas;
+
+import java.util.function.BinaryOperator;
+
+public class OperadorBinario {
+	public static void main(String[] args) {
+		
+		BinaryOperator<Double> media = (Double a, Double b) -> (a + b)/2;
+		
+		
+	}
+}

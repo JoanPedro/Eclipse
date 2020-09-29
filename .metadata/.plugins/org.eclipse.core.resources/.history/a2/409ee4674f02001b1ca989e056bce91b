@@ -1,0 +1,24 @@
+package excessao.personalizadaA;
+
+
+public class NumeroNegativoExpection extends RuntimeException {
+	private static final long serialVersionUID = 1L;
+	private String nomeDoAtributo;
+
+	public NumeroNegativoExpection(String nomeDoAtributo) {
+		this.nomeDoAtributo = nomeDoAtributo;
+	}
+	
+	public String getMessage() {
+		return String.format("O atributo %s está negativo", this.getNomeDoAtributo());
+	}
+
+	public String getNomeDoAtributo() {
+		return nomeDoAtributo;
+	}
+
+	public void setNomeDoAtributo(String nomeDoAtributo) {
+		this.nomeDoAtributo = nomeDoAtributo;
+	}
+}
+ 

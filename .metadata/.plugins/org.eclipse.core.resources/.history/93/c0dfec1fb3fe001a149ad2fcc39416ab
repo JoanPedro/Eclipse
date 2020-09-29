@@ -1,0 +1,18 @@
+package fundamentos;
+
+import javax.swing.JOptionPane;
+
+public class DesafioConversao {
+	public static void main(String[] args) {
+		String valor1 = JOptionPane.showInputDialog("Digite o primeiro número: ");
+		String valor2 = JOptionPane.showInputDialog("Digite o primeiro número: ");
+		String valor3 = JOptionPane.showInputDialog("Digite o primeiro número: ");
+		
+		Double salario = Double.parseDouble(valor1);
+		Double salario2 = Double.parseDouble(valor1);
+		Double salario3 = Double.parseDouble(valor1);
+		
+		Double total = salario + salario1 + salario2;
+		System.out.println(total);
+	}
+}

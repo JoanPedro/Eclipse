@@ -1,0 +1,13 @@
+package lambdas;
+
+import java.util.function.Consumer;
+
+public class Consumidor {
+	public static void main(String[] args) {
+		
+		Consumer<Produto> imprimir = produto -> System.out.println(produto.nome + "!!!");
+	
+		Produto p1 = new Produto("Caneta Preta", 12.354, 0.9);
+		imprimir.accept(p1);
+	}
+}

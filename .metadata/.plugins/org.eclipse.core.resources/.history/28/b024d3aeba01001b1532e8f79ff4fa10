@@ -1,0 +1,40 @@
+package streams;
+
+public class Media {
+	private double total;
+	private int quantidade;
+
+	public Media adicionar(double valor) {
+		setTotal(getTotal() + valor);
+		setQuantidade(getQuantidade() + 1);
+		return this;
+	}
+	
+	static public Media combinar (Media m1, Media m2) {
+		Media resultante = new Media();
+		resultante.quantidade = m1.quantidade + m2.quantidade;
+		resultante.total = m1.quantidade + m2.quantidade;
+		return resultante;
+	}
+
+	public int getQuantidade() {
+		return this.quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public double getTotal() {
+		return this.total;
+	}
+
+	public void setTotal(double total) {
+		this.total = total;
+	}
+
+	public double getValor() {
+		return this.total / this.quantidade;
+	}
+
+}

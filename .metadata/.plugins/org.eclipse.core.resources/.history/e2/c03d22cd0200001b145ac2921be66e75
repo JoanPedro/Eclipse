@@ -1,0 +1,27 @@
+package colecoes;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import classe.Usuario;
+
+public class ConjuntoComportado {
+	public static void main(String[] args) {
+		Set<String> lista = new HashSet<String>();
+		lista.add("Ana Maria");
+		lista.add("Joan Pedro");
+		lista.add("Maria Joana");
+
+		for(String candidato: lista) {
+			System.out.println(candidato);
+		}
+		
+		Set<Usuario> u = new HashSet<Usuario>();
+		Usuario novoUsuario = new Usuario();
+		novoUsuario.setNome("Joan Pedro");
+		novoUsuario.setEmail("any_email@mail.com");
+
+		u.add(novoUsuario);
+		System.out.println(novoUsuario.getNome());
+	}
+}

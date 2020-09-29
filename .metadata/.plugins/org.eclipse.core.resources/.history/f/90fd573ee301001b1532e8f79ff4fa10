@@ -1,0 +1,14 @@
+package excessao;
+
+public class Basico {
+	public static void main(String[] args) {
+		Aluno a1 = null;
+		imprimirNomeAluno(a1);
+
+		System.out.println(7 / 0);
+	}
+
+	static public void imprimirNomeAluno(Aluno aluno) {
+		System.out.println(aluno.nome);
+	}
+}

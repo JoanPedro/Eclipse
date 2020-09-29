@@ -1,0 +1,8 @@
+package lambdas;
+
+public class CalculoTeste2 {
+	public static void main(String[] args) {
+		Calculo soma = (double a, double b) -> { return a + b; };
+		System.out.println(soma(3, 5));
+	}
+}

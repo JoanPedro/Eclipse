@@ -1,0 +1,25 @@
+package Classe;
+
+interface GenericProduto {
+	String nome = "";
+	double preco = 0;
+	double desconto = 0;
+
+	double aplicarDesconto();
+}
+
+public class Produto implements GenericProduto {
+
+	String nome;
+	double preco;
+	double desconto;
+
+	Produto(String nomeInicial) {
+		nome = nomeInicial;
+	}
+	
+	public double aplicarDesconto() {
+		return this.preco * (1 - this.desconto);
+	}
+
+}
