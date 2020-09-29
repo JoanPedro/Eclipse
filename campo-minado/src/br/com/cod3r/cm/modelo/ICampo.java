@@ -1,8 +1,12 @@
 package br.com.cod3r.cm.modelo;
 
-interface ICampo {
-	public int linha = 0;
-	public int coluna = 0;
 
-	boolean adicionarVizinho(ICampo candidatoAVizinho);
+interface ICampo {
+	boolean adicionarVizinho(Campo candidatoAVizinho);
+	
+	boolean canAbrir();
+	
+	boolean isVizinhancaSegura();
+	
+	void alternarMarcacao();
 }

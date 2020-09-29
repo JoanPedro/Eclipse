@@ -3,14 +3,16 @@ package br.com.cod3r.cm.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Campo {
+import br.com.cod3r.cm.excessao.ExplosaoException;
+
+class Campo implements ICampo {
 
 	private final int linha;
 	private final int coluna;
 
-	private boolean minado = false;
-	private boolean aberto = false;
-	private boolean marcado = false;
+	private boolean isMinado = false;
+	private boolean isAberto = false;
+	private boolean isMarcado = false;
 
 	private List<Campo> vizinhos = new ArrayList<Campo>();
 
@@ -19,7 +21,7 @@ public class Campo {
 		this.coluna = coluna;
 	}
 
-	boolean adicionarVizinho(Campo candidatoAVizinho) {
+	public boolean adicionarVizinho(Campo candidatoAVizinho) {
 		boolean linhaDiferente = this.linha != candidatoAVizinho.linha;
 		boolean colunaDiferente = this.coluna != candidatoAVizinho.coluna;
 		boolean isDiagonal = linhaDiferente && colunaDiferente;
@@ -38,5 +40,38 @@ public class Campo {
 
 		return false;
 	}
+	
+	public void alternarMarcacao() {
+		if(!this.isAberto) {
+			this.isMarcado = !this.isMarcado;
+			System.out.println(this.isMarcado);
+		}
+	}
+	
+	public boolean canAbrir() {
+		
+		if(!this.isAberto && !this.isMarcado) {
+			this.isAberto = true;
+			
+			if(isMinado) {
+				throw new ExplosaoException();
+			}
+			
+			if(isVizinhancaSegura()) {
+				vizinhos.stream().forEach(vizinho -> canAbrir());
+			}
+			
+			return true;
+		}
 
+		return false;
+	}
+
+	public boolean isVizinhancaSegura() {
+		return vizinhos.stream().noneMatch(vizinho -> vizinho.isMinado);
+	}
+	
+	public boolean getIsMarcado() {
+		return this.isMarcado;
+	}
 }
