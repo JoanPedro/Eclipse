@@ -19,7 +19,7 @@ public class Campo {
 		this.coluna = coluna;
 	}
 
-	public boolean adicionarVizinho(Campo candidatoAVizinho) {
+	boolean adicionarVizinho(Campo candidatoAVizinho) {
 		boolean linhaDiferente = this.linha != candidatoAVizinho.linha;
 		boolean colunaDiferente = this.coluna != candidatoAVizinho.coluna;
 		boolean isDiagonal = linhaDiferente && colunaDiferente;
@@ -27,7 +27,6 @@ public class Campo {
 		int deltaLinha = Math.abs(this.linha - candidatoAVizinho.linha);
 		int deltaColuna = Math.abs(this.coluna - candidatoAVizinho.coluna);
 		int deltaGeral = deltaColuna + deltaLinha;
-		System.out.println(deltaGeral);
 
 		if (deltaGeral == 1 && !isDiagonal) {
 			vizinhos.add(candidatoAVizinho);
