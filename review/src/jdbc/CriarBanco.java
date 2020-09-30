@@ -8,13 +8,7 @@ import java.sql.Statement;
 public class CriarBanco {
 	public static void main(String[] args) throws SQLException {
 		
-		final String url = "jdbc:sqlserver://localhost:1433";
-		final String user = "sa";
-		final String password = "yourStrong(!)Password";
-		
-		Connection conexao = DriverManager.getConnection(url, user, password);
-		
-		System.out.println("Conexão efetuada com sucesso!");
+		Connection conexao = FabricaConexao.getConexao();
 		
 		Statement stmt = conexao.createStatement();
 		stmt.execute("IF NOT EXISTS (\n" + 
