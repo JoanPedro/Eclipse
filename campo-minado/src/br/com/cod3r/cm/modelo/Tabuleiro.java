@@ -10,10 +10,9 @@ public class Tabuleiro {
 	private int colunas;
 	private int minas;
 
-	private final List<Campo> campos = new ArrayList<>();
+	private final List<Campo> campos = new ArrayList<Campo>();
 
 	public Tabuleiro(int linhas, int colunas, int minas) {
-		super();
 		this.linhas = linhas;
 		this.colunas = colunas;
 		this.minas = minas;
@@ -21,6 +20,16 @@ public class Tabuleiro {
 		gerarCampos();
 		associarVizinho();
 		sortearMinas();
+	}
+
+	public void canAbrir(int linha, int coluna) {
+		campos.parallelStream().filter(campo -> campo.getLinha() == linha || campo.getColuna() == coluna).findFirst()
+				.ifPresent(campo -> campo.canAbrir());
+	}
+
+	public void alternarMarcacao(int linha, int coluna) {
+		campos.parallelStream().filter(campo -> campo.getLinha() == linha || campo.getColuna() == coluna).findFirst()
+				.ifPresent(campo -> campo.alternarMarcacao());
 	}
 
 	private void gerarCampos() {
@@ -61,6 +70,20 @@ public class Tabuleiro {
 	}
 
 	public String toString() {
+		StringBuilder sb = new StringBuilder();
 
+		int i = 0;
+		for (int linha = 0; linha < this.linhas; linha++) {
+			for (int coluna = 0; coluna < this.colunas; coluna++) {
+				sb.append(" ");
+				sb.append(campos.get(i));
+				sb.append(" ");
+				i++;
+			}
+
+			sb.append("\n");
+		}
+
+		return sb.toString();
 	}
 }
