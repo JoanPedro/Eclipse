@@ -40,27 +40,26 @@ class Campo implements ICampo {
 
 		return false;
 	}
-	
+
 	public void alternarMarcacao() {
-		if(!this.isAberto) {
+		if (!this.isAberto) {
 			this.isMarcado = !this.isMarcado;
-			System.out.println(this.isMarcado);
 		}
 	}
-	
+
 	public boolean canAbrir() {
-		
-		if(!this.isAberto && !this.isMarcado) {
+
+		if (!this.isAberto && !this.isMarcado) {
 			this.isAberto = true;
-			
-			if(isMinado) {
+
+			if (this.isMinado) {
 				throw new ExplosaoException();
 			}
-			
-			if(isVizinhancaSegura()) {
-				vizinhos.stream().forEach(vizinho -> canAbrir());
+
+			if (isVizinhancaSegura()) {
+				vizinhos.forEach(vizinho -> vizinho.canAbrir());
 			}
-			
+
 			return true;
 		}
 
@@ -68,10 +67,79 @@ class Campo implements ICampo {
 	}
 
 	public boolean isVizinhancaSegura() {
-		return vizinhos.stream().noneMatch(vizinho -> vizinho.isMinado);
+		return vizinhos.stream().noneMatch(vizinho -> vizinho.getIsMinado());
 	}
-	
+
 	public boolean getIsMarcado() {
 		return this.isMarcado;
+	}
+
+	void minar() {
+		if (!this.isMinado) {
+			this.isMinado = true;
+		}
+	}
+
+	public boolean getIsAberto() {
+		return this.isAberto;
+	}
+
+	public boolean getIsMinado() {
+		return this.isMinado;
+	}
+
+	public boolean isFechado() {
+		return !this.getIsAberto();
+	}
+
+	public int getLinha() {
+		return this.linha;
+	}
+
+	public int getColuna() {
+		return this.coluna;
+	}
+
+	public void setMinado(boolean isMinado) {
+		this.isMinado = isMinado;
+	}
+
+	public void setAberto(boolean isAberto) {
+		this.isAberto = isAberto;
+	}
+
+	public void setMarcado(boolean isMarcado) {
+		this.isMarcado = isMarcado;
+	}
+
+	boolean objetivoAlcancado() {
+		boolean desvendado = !this.getIsMinado();
+		boolean protegido = this.getIsMinado() && this.getIsMarcado();
+
+		return desvendado || protegido;
+	}
+
+	long minasNaVizinhanca() {
+		return vizinhos.stream().filter(vizinho -> vizinho.getIsMinado()).count();
+	}
+
+	void reiniciar() {
+		this.setAberto(false);
+		this.setMarcado(false);
+		this.setMinado(false);
+	}
+
+	public String toString() {
+		if (this.getIsMarcado()) {
+			return "x";
+		} else if (this.getIsAberto() && this.getIsMinado()) {
+			return "*";
+		} else if (this.getIsAberto() && this.minasNaVizinhanca() > 0) {
+			return Long.toString(this.minasNaVizinhanca());
+		} else if (this.getIsAberto()) {
+			return " ";
+		}
+
+		return "?";
 	}
 }
