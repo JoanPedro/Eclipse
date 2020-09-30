@@ -1,0 +1,24 @@
+package excessao.personalizadaB;
+
+
+public class NumeroForaIntervaloExpection extends Exception {
+	private static final long serialVersionUID = 1L;
+	private String nomeDoAtributo;
+
+	public NumeroForaIntervaloExpection(String nomeDoAtributo) {
+		this.nomeDoAtributo = nomeDoAtributo;
+	}
+	
+	public String getMessage() {
+		return String.format("O atributo '%s' está fora do intervalo", this.getNomeDoAtributo());
+	}
+
+	public String getNomeDoAtributo() {
+		return nomeDoAtributo;
+	}
+
+	public void setNomeDoAtributo(String nomeDoAtributo) {
+		this.nomeDoAtributo = nomeDoAtributo;
+	}
+}
+ 
