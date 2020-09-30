@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class FabricaConexao {
 	public static Connection getConexao() {
 		try {
-			final String url = "jdbc:sqlserver://localhost:1433";
+			final String url = "jdbc:sqlserver://localhost:1433;databaseName=curso_java;verifyServerCertificate=true";
 			final String user = "sa";
 			final String password = "yourStrong(!)Password";
 			
