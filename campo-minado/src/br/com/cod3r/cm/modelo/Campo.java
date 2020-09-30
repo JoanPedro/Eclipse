@@ -22,12 +22,12 @@ class Campo implements ICampo {
 	}
 
 	public boolean adicionarVizinho(Campo candidatoAVizinho) {
-		boolean linhaDiferente = this.linha != candidatoAVizinho.linha;
-		boolean colunaDiferente = this.coluna != candidatoAVizinho.coluna;
+		boolean linhaDiferente = this.getLinha() != candidatoAVizinho.linha;
+		boolean colunaDiferente = this.getColuna() != candidatoAVizinho.coluna;
 		boolean isDiagonal = linhaDiferente && colunaDiferente;
 
-		int deltaLinha = Math.abs(this.linha - candidatoAVizinho.linha);
-		int deltaColuna = Math.abs(this.coluna - candidatoAVizinho.coluna);
+		int deltaLinha = Math.abs(this.getLinha() - candidatoAVizinho.linha);
+		int deltaColuna = Math.abs(this.getColuna() - candidatoAVizinho.coluna);
 		int deltaGeral = deltaColuna + deltaLinha;
 
 		if (deltaGeral == 1 && !isDiagonal) {

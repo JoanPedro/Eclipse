@@ -1217,3 +1217,32 @@
 2020-09-29 21:50:18,573 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
 2020-09-29 21:50:18,575 [Worker-71: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-09-29 21:50:18,575 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:03:54,461 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-30 08:03:55,792 [Worker-16: Launching CampoTeste] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:03:55,797 [Worker-16: Launching CampoTeste] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:03:55,801 [Worker-16: Launching CampoTeste] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:03:55,803 [Worker-16: Launching CampoTeste] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:04:45,142 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:04:45,143 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:04:45,145 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:04:45,146 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:07:20,036 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:07:20,037 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:07:20,039 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:07:20,039 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:10:07,815 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:10:07,816 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:10:07,818 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:10:07,819 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:12:04,811 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:12:04,812 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:12:04,818 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:12:04,819 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:13:23,126 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:13:23,127 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:13:23,128 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:13:23,129 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
+2020-09-30 08:15:01,796 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:15:01,799 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/main/resources
+2020-09-30 08:15:01,802 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-09-30 08:15:01,802 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/joan/eclipse-workspace/campo-minado/src/test/resources
