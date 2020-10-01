@@ -53,6 +53,10 @@ public class DAO<E> implements IDAO<E> {
 		return this.abrirT().incluir(entidade).fecharT();
 	}
 	
+	public E obterPorID(Object id) {
+		return entityManager.find(this.classe, id);
+	}
+	
 	public List<E> obterTodos(int qtde, int deslocamento) {
 		if(this.classe == null) {
 			throw new UnsupportedOperationException("Operação não suportada: Classe nula");

@@ -16,4 +16,6 @@ public interface IDAO<E> {
 	public List<E> obterTodos();
 
 	public void fechar();
+
+	public E obterPorID(Object id);
 }
