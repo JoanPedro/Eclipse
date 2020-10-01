@@ -1,4 +1,4 @@
-package modelo.basico;
+package modelo.basico.protocols;
 
 public interface IUsuario {
 	public Long getId();

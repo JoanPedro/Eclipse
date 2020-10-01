@@ -1,8 +1,11 @@
-package modelo.basico;
+package modelo.basico.teste.basico;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import modelo.basico.Usuario;
+import modelo.basico.protocols.IUsuario;
 
 public class AlterarUsuario2 {
 	public static void main(String[] args) {

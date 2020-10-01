@@ -1,21 +1,26 @@
-package modelo.basico;
+package modelo.basico.teste.basico;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class ObterUsuario {
+import modelo.basico.Usuario;
+import modelo.basico.protocols.IUsuario;
+
+public class NovoUsuario {
 	public static void main(String[] args) {
+
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
 		EntityManager em = emf.createEntityManager();
 
-		IUsuario usuarioExistente = em.find(Usuario.class, 6L);
-		System.out.println(usuarioExistente.getNome());
+		IUsuario novoUsuario = new Usuario("Validate", "val@lanche.com");
 
 		em.getTransaction().begin();
-		em.persist(usuarioExistente);
+		em.persist(novoUsuario);
 		em.getTransaction().commit();
 
+		System.out.println("O novo usuário tem o ID: " + novoUsuario.getId());
+		
 		em.close();
 		emf.close();
 	}
