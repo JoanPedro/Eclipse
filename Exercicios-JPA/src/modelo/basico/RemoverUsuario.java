@@ -4,20 +4,21 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class NovoUsuario {
+public class RemoverUsuario {
 	public static void main(String[] args) {
-
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exercicios-jpa");
 		EntityManager em = emf.createEntityManager();
 
-		IUsuario novoUsuario = new Usuario("Nivaldete Beatriz", "nilvaldete@lanche.com");
+		IUsuario usuario = em.find(Usuario.class, 7L);
 
-		em.getTransaction().begin();
-		em.persist(novoUsuario);
-		em.getTransaction().commit();
+		if (usuario != null) {
+			em.getTransaction().begin();
 
-		System.out.println("O novo usuário tem o ID: " + novoUsuario.getId());
-		
+			em.remove(usuario);
+
+			em.getTransaction().commit();
+		}
+
 		em.close();
 		emf.close();
 	}

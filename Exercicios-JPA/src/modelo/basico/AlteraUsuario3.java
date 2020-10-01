@@ -13,10 +13,11 @@ public class AlteraUsuario3 {
 		
 		IUsuario usuario = em.find(Usuario.class, 7L);
 
+		em.detach(usuario);
+		
 		usuario.setNome("JoanPwdd");
 		usuario.setEmail("jwdd@email.com");
 
-		em.detach(usuario);
 		em.merge(usuario);
 
 		em.getTransaction().commit();
