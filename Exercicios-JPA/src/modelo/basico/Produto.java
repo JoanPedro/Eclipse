@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import modelo.basico.protocols.IEntidade;
 import modelo.basico.protocols.IProduto;
 
 @Entity

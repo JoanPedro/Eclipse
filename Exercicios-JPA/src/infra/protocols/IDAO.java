@@ -2,8 +2,6 @@ package infra.protocols;
 
 import java.util.List;
 
-import modelo.basico.protocols.IProduto;
-
 public interface IDAO<E> {
 	public IDAO<E> abrirT();
 
