@@ -24,10 +24,6 @@ public class Produto implements IProduto {
 	@Column(name = "prod_preco", nullable = false, precision = 11, scale = 3)
 	private Double preco;
 
-	public Long getId() {
-		return id;
-	}
-
 	public Produto() {
 
 	}
@@ -40,6 +36,10 @@ public class Produto implements IProduto {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public Long getId() {
+		return id;
 	}
 
 	public String getNome() {

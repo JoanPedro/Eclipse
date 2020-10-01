@@ -2,6 +2,8 @@ package modelo.basico.protocols;
 
 public interface IProduto {
 	public void setId(Long id);
+	
+	public Long getId();
 
 	public String getNome();
 
