@@ -18,6 +18,8 @@ public interface IDAO<E> {
 	public E obterPorID(Object id);
 	
 	public List<E> consultar(String nomeConsulta, Object... params);
+	
+	public E consultarUm(String nomeConsulta, Object... params);
 
 	public void fechar();
 }
