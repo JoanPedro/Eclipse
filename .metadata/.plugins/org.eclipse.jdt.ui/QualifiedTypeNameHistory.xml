@@ -49,4 +49,10 @@
     <fullyQualifiedTypeName name="excessao.Aluno"/>
     <fullyQualifiedTypeName name="excessao.personalizadaA.StringVaziaException"/>
     <fullyQualifiedTypeName name="excessao.personalizadaA.NumeroForaIntervaloExpection"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Inheritance"/>
+    <fullyQualifiedTypeName name="javax.persistence.DiscriminatorColumn"/>
+    <fullyQualifiedTypeName name="javax.persistence.DiscriminatorType"/>
+    <fullyQualifiedTypeName name="javax.persistence.DiscriminatorValue"/>
+    <fullyQualifiedTypeName name="modelo.heranca.AlunoBolsista"/>
 </qualifiedTypeNameHistroy>

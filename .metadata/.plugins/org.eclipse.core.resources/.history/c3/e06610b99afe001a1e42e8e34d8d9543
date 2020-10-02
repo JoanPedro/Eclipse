@@ -1,6 +1,0 @@
-package fundamentos;
-
-public class ObjetoVsPrimitivo {
-	public static void main(String[] args) {
-	}
-}
