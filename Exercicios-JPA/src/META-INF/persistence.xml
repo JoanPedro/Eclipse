@@ -16,6 +16,8 @@
         <class>modelo.muitospramuitos.Sobrinho</class>
         <class>modelo.muitospramuitos.Filme</class>
         <class>modelo.muitospramuitos.Ator</class>
+        <class>modelo.heranca.Aluno</class>
+        <class>modelo.heranca.AlunoBolsista</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                 value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
