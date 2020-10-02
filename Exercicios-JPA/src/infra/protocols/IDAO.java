@@ -15,7 +15,9 @@ public interface IDAO<E> {
 
 	public List<E> obterTodos();
 
-	public void fechar();
-
 	public E obterPorID(Object id);
+	
+	public List<E> consultar(String nomeConsulta, Object... params);
+
+	public void fechar();
 }
