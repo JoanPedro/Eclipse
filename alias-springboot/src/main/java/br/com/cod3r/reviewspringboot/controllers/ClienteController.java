@@ -3,6 +3,7 @@ package br.com.cod3r.reviewspringboot.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cod3r.reviewspringboot.models.Cliente;
@@ -19,5 +20,12 @@ public class ClienteController {
 	@GetMapping("/{id}")
 	public Cliente obterClientePorId(@PathVariable int id) {
 		return new Cliente(id, "Maria", "987.654.321-00");
+	}
+	
+	@GetMapping("/cli")
+	public Cliente obterClientePorQuery(
+		@RequestParam(name = "id", defaultValue = "1", required = true) int id
+	) {
+		return new Cliente(id, "João Algusto", "111.222.333-44");
 	}
 }
