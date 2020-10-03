@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.Queue"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.BlockingQueue"/>
-    <fullyQualifiedTypeName name="java.util.Deque"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="colecoes.Usuario"/>
     <fullyQualifiedTypeName name="oo.herenca.Direcao"/>
     <fullyQualifiedTypeName name="oo.herenca.Heroi"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
     <fullyQualifiedTypeName name="br.com.cod3r.reviewspringboot.controllers.ProdutoController"/>
     <fullyQualifiedTypeName name="org.springframework.web.context.annotation.ApplicationScope"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.BookHandler"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.single.BookHandler"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.single.BookPersistence"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.single.Book"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.single.BookFactory"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.open.SortType"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.open.SorterManager"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.open.InsertionSort"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.open.MergeSort"/>
+    <fullyQualifiedTypeName name="br.com.joanpedro.solid.open.Quicksort"/>
 </qualifiedTypeNameHistroy>
