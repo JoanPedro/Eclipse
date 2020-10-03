@@ -1,11 +1,12 @@
 package br.com.joanpedro.solid;
 
-import br.com.joanpedro.solid.single.Book;
+import br.com.joanpedro.solid.open.Quicksort;
+import br.com.joanpedro.solid.open.SorterManager;
 
 public class App {
 
 	public static void main(String[] args) {
-		Book book1 = new Book("Albert Camus", 120);
-		book1.save();
+		SorterManager sorterManager = new SorterManager();
+		sorterManager.sort(new Quicksort());
 	}
 }

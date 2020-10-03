@@ -6,8 +6,8 @@ public class Book implements BookHandler {
 	private int numOfPages;
 	private String authorName;
 
-	public Book(String authorNmae, int numOfPages) {
-		this.authorName = authorNmae;
+	public Book(String authorName, int numOfPages) {
+		this.authorName = authorName;
 		this.numOfPages = numOfPages;
 		this.bookPersistence = new BookPersistence();
 	}
