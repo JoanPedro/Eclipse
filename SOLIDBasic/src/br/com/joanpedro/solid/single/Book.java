@@ -1,13 +1,15 @@
-package br.com.joanpedro.solid;
+package br.com.joanpedro.solid.single;
 
 public class Book implements BookHandler {
 
+	private BookPersistence bookPersistence;
 	private int numOfPages;
 	private String authorName;
 
 	public Book(String authorNmae, int numOfPages) {
 		this.authorName = authorNmae;
 		this.numOfPages = numOfPages;
+		this.bookPersistence = new BookPersistence();
 	}
 
 	public int getNumOfPages() {
@@ -27,18 +29,13 @@ public class Book implements BookHandler {
 	}
 
 	@Override
+	public void save() {
+		this.bookPersistence.save(this);
+	}
+
+	@Override
 	public String toString() {
 		return authorName + " - " + numOfPages;
-	}
-
-	@Override
-	public void print() {
-		System.out.println("Printing the book...");
-	}
-
-	@Override
-	public void save() {
-		System.out.println("Saving the book...");
 	}
 
 }
