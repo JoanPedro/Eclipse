@@ -1,13 +1,15 @@
 package br.com.joanpedro.solid;
 
-import br.com.joanpedro.solid.interfaceSegregation.BalanceTree;
-import br.com.joanpedro.solid.interfaceSegregation.BinarySearchTree;
-import br.com.joanpedro.solid.interfaceSegregation.Tree;
+import br.com.joanpedro.solid.dependency.DatabaseHandler;
+import br.com.joanpedro.solid.dependency.OracleDatabase;
 
 public class App {
 
 	public static void main(String[] args) {
-		Tree binarySearchTree = new BinarySearchTree();
-		Tree balanceTree = new BalanceTree();
+
+		DatabaseHandler databaseHandler = new DatabaseHandler(new OracleDatabase());
+
+		databaseHandler.connect();
+		databaseHandler.disconnect();
 	}
 }
