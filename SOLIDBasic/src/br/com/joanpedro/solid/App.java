@@ -1,14 +1,13 @@
 package br.com.joanpedro.solid;
 
-import br.com.joanpedro.solid.liskov.ElectricCar;
-import br.com.joanpedro.solid.liskov.ElectricVehicle;
-import br.com.joanpedro.solid.liskov.Vehicle;
+import br.com.joanpedro.solid.interfaceSegregation.BalanceTree;
+import br.com.joanpedro.solid.interfaceSegregation.BinarySearchTree;
+import br.com.joanpedro.solid.interfaceSegregation.Tree;
 
 public class App {
 
 	public static void main(String[] args) {
-		ElectricVehicle car = new ElectricCar();
-		
-		car.chargeBattery();
+		Tree binarySearchTree = new BinarySearchTree();
+		Tree balanceTree = new BalanceTree();
 	}
 }
